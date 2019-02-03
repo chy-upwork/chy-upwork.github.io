@@ -1,0 +1,498 @@
+/*Style Sheet
+
+Colors
+=======
+Black #000000
+Blue #00c0ff
+White #ffffff
+DeepBlue #0090bf
+
+Grey #8a8a8a
+LightGrey #eeeeee
+DarkerGrey #444444
+
+*/
+
+
+/*
+-------------
+General Style
+-------------
+*/
+
+html {
+
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+
+}
+
+body {
+
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	line-height: 20px;
+	color: #444444;
+}
+
+
+
+
+/*
+-------------
+TypoGraphy
+-------------
+*/
+
+h1,
+h2,
+h3 {
+
+	font-weight: 300;
+	margin: 0;
+	line-height: 45px;
+}
+
+h4,
+h5,
+h6 {
+
+	font-weight: bold;
+	margin: 5px 0;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 30px;
+
+}
+
+h4 {
+
+	font-size: 18px;
+	margin: 10px 0;
+}
+
+h5 {
+
+	font-size: 13px;
+	margin: 0;
+	text-transform: uppercase;
+}
+
+p {
+	margin: 0 0 10px 0;
+}
+
+p.lead {
+
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: 300;
+
+}
+
+
+/*
+-------------
+Layouts
+-------------
+*/
+
+.container {
+	
+	width: 940px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+
+header {
+
+	background: #000;
+}
+
+#logo {
+
+	display: block; 
+	padding: 17px 0 16px 5px;
+	float: left;
+
+}
+
+#call-to-action {
+	
+	margin: 40px 0;
+	
+}
+
+
+
+#hero {
+
+	background: #00c0ff;
+	color: #000;
+
+}
+
+#hero-title {
+
+	width: 520px;
+	padding: 60px 0;
+	float: left;
+}
+
+#hero-image {
+	float: right;
+	margin: 10px 0 -30px 0;
+}
+
+#content {
+	
+	padding: 100px 0;
+	
+}
+
+#column-content{
+	
+	width: 700px;
+	float: left;
+}
+
+input {
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	padding: 10px;
+	
+}
+
+
+
+
+/*
+-------------
+Nav Styles
+-------------
+*/
+
+nav ul {
+
+	margin: 0;
+	padding: 0;
+	float: right;
+}
+
+nav ul li {
+
+	list-style: none;
+	float: left;
+
+}
+
+header nav ul li a {
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 20px;
+	border: solid 1px #333;
+
+}
+
+header nav ul li a:hover {
+
+	background: #222;
+}
+
+header nav ul li a:active {
+
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8) inset;
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.8) inset;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.2) inset;
+}
+
+/*
+-------------
+Button Styles
+-------------
+*/
+
+.btn {
+
+	margin: 0;
+	padding: 10px 20px 11px;
+	width: auto;
+	background: #0090bf;
+	border: 1px solid #1e728c;
+	text-decoration: none;
+	outline: none;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	display: inline-block;
+	/*Because we want to give a width or height*/
+
+	/*IE7 Hack for inline-block*/
+
+	zoom: 1;
+	*display: inline;
+	
+	/*position: relative;*/
+
+
+	/*fancy box shadow*/
+
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset;
+
+	/*CS3 transitions*/
+
+	-webkit-transition: backgroundcolor 0.15s ease-in-out 1s;
+	-moz-transition: backgroundcolor 0.15s ease-in-out 1s;
+	-o-transition: backgroundcolor 0.15s ease-in-out 1s;
+	-transition: backgroundcolor 0.15s ease-in-out 1s;
+
+	/*property_name duration timing_function delay*/
+}
+
+.btn:hover {
+
+	color: #fff;
+	background: #0086b2;
+
+}
+
+.btn:active {
+
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset;
+
+}
+
+.btn-large {
+
+	padding: 22px 30px;
+	font-size: 24px;
+	font-weight: 200;
+}
+
+.btn-secondary {
+	
+	font-size: 16px;
+	
+}
+
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:active {
+
+	background: none;
+	border: none;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+
+}
+
+.btn-secondary:hover{
+	
+	text-decoration: underline;
+}
+
+.btn-secondary:active {
+	
+	position: relative;
+	top: 1px;
+}
+
+.small-btn{
+	
+	padding:11px;
+	font-weight:bold;
+	margin-left:-5px;
+
+}
+
+/*
+-------------
+Content Styles
+-------------
+*/
+.blog-title{
+	
+	margin-bottom: 30px;
+}
+
+
+.column {
+	
+	width: 220px;
+	float:left;
+	margin-right:20px; 
+}
+
+.last-blog {
+	
+	margin-right:0;
+	
+}
+
+/*
+-------------
+Sidebar Styles
+-------------
+*/
+
+aside {
+	
+	width: 160px;
+	float:right;
+	margin-left:20px;
+	padding:30px;
+	background:#444;
+	color:white;
+	font-size:12px;
+	line-height: 18px;
+}
+
+.widget:nth-child(2){
+
+	margin-top: 40px;
+	
+}
+
+.widget h4{
+	
+	font-weight:200;
+	font-size: 20px;
+	margin-bottom: 10px;
+	
+}
+
+.widget a {
+	
+	margin:10px 5px 0 0;
+	position:relative;
+}
+
+
+
+.widget a:hover{
+	
+	top: -1px;
+}
+
+/*
+-------------
+Secondary Cta form Styles
+-------------
+*/
+
+#secondary-cta {
+	
+	background: #eee;
+	margin-top:30px;
+	padding:30px 0 30px;
+	
+	
+}
+ 
+#secondary-cta h4{
+	
+	font-weight: 200;
+	font-size: 24px;
+	float:left;
+}
+
+#secondary-cta form{
+	
+	margin:0;
+	float:right;
+}
+
+/*
+-------------
+footer Styles
+-------------
+*/
+
+footer {
+	
+	background: #444;
+	color:#fff;
+	padding: 30px 0;
+	
+}
+
+footer #copyright {
+	
+	width:280px;
+	float:left;
+	
+}
+
+footer nav {
+	
+	width: 340px;
+	float:right;
+	
+}
+
+footer a {
+	
+	color:#fff;
+	text-decoration: none;
+}
+
+footer nav a {
+	
+	margin-right:15px;
+}
+
+footer nav a:hover{
+	
+	color:#00c0ff;
+}
+
+
+
+
+
+
+
+/*
+-------------
+Global Styles
+-------------
+*/
+
+.clearfix:before,
+.clearfix:after {
+
+	content: "";
+	display: table;
+
+}
+
+.clearfix:after {
+
+	clear: both;
+}
+
+.clearfix {
+
+	zoom: 1;
+}
+
+
+
+/*For IE*/
